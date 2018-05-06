@@ -2,6 +2,8 @@ class School
 
   def initialize(student)
     @student = student
+
+    @roster = Hash.new{|key, value| key[value] = []}
   end
 
 
